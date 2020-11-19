@@ -1,0 +1,12 @@
+.a {
+  color: black;
+}
+
+.button.ui.button {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.ui.menu:not(.vertical) .item>.button {
+    margin: 0 5px;
+}
