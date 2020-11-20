@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from './Header';
+import Navbar from './Navbar';
 import Banner from './Banner';
 
 const App = () => {
   return (
-    <div className="ui container">
-      <Header/>
+    <React.Fragment>
       <Banner/>
-    </div>
+    </React.Fragment>
   );
 };
 

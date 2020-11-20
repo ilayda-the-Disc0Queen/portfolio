@@ -1,15 +1,21 @@
 import React from 'react';
 import './Banner.css';
-import dual_screens from '../images/dual_screens.jpg';
+import Navbar from './Navbar';
 
 const Banner = () => {
   return (
-    <img
-      className="ui fluid image"
-      src={dual_screens}
-      alt="2 computer monitors with plants">
-    </img>
+    <div className="image-banner">
+      <div className="banner text container">
+        <h1 className="banner text header">
+          Ilayda Bakare
+        </h1>
+        <h2 className="banner text" >Fullstack developer</h2>
+        <div className="banner ui huge primary button">Click me!</div>
+      </div>
+      <Navbar/>
+    </div>
   );
 };
 
 export default Banner;
+
