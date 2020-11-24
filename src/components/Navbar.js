@@ -3,7 +3,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <div className="navbar container ui inverted menu">
+    <div className="navbar container ui inverted menu top fixed">
       <div className="ui three item menu">
         <a className="item active">Home</a>
         <a className="item">Projects</a>

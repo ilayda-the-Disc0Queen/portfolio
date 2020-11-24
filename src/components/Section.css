@@ -1,8 +1,24 @@
 
-#info {
-  padding: 6em 0;
+#info-box {
+  padding: 5em 0;
 }
 
 .medium.header {
-  padding: 3em 0;
+  padding: 0 2em 3em;
+}
+
+#skills-container {
+  padding-bottom: 4em;
+}
+
+#quote-box .column {
+  padding: 3em;
+}
+
+.ui.segment {
+  padding: 0;
+}
+
+#website .container {
+  padding: 4em 0;
 }
