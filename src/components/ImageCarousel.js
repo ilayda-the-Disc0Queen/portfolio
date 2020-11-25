@@ -6,33 +6,21 @@ import { exhibitz, boatz } from './CarouselDetail';
 const ImageCarousel = (props) => {
   console.log(exhibitz)
   return (
-    <Carousel>
+    <Carousel >
       <Carousel.Item>
-        {/* CAROUSEL IMAGE
-        <img
-          className="d-block w-100"
-          src={picture}
-          alt="First slide"
-        />
-
-        props.children.image1
-        */}
-
-
-        <img src={exhibitz.slide1.image}/>
+        <img className="ui fluid image"
+          src={exhibitz.slide1.image}
+          alt={exhibitz.slide1.alt}/>
         <Carousel.Caption>
-        {/* IMAGE CAPTION
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          props.children.caption1
-          */}
+          <h3>{exhibitz.slide1.header}</h3>
+          <p>{exhibitz.slide1.caption}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src={picture}
-          alt="Third slide"
+          className="ui fluid image"
+          src={exhibitz.slide2.image}
+          alt={exhibitz.slide2.alt}/>
         />
 
         <Carousel.Caption>
@@ -43,8 +31,8 @@ const ImageCarousel = (props) => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={picture}
-          alt="Third slide"
+          src={exhibitz.slide3.image}
+          alt={exhibitz.slide3.alt}/>
         />
 
         <Carousel.Caption>
