@@ -1,16 +1,14 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import picture from '../images/dual_screens.jpg';
 import websiteConfig from './CarouselDetail';
 
 const ImageCarousel = (props) => {
   const site = props.website
   console.log(site)
-  const { websiteName, text, slide1, slide2, slide3 } = websiteConfig[site];
-
+  const { slide1, slide2, slide3 } = websiteConfig[site];
 
   return (
-    <Carousel className="{site}">
+    <Carousel id="{site}">
       <Carousel.Item>
         <img className="ui fluid image"
           src={slide1.image}
@@ -28,20 +26,20 @@ const ImageCarousel = (props) => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>{slide2.header}</h3>
+          <p>{slide2.caption}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="ui fluid image"
           src={slide3.image}
           alt={slide3.alt}/>
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>{slide3.header}</h3>
+          <p>{slide1.caption}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

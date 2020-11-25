@@ -1,6 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './Section.css';
 import picture from '../images/dual_screens.jpg';
+import ImageCarousel from './ImageCarousel';
+
+
 
 const Section = () => {
   // personal info and welcome ----------
@@ -80,42 +84,35 @@ const Section = () => {
 
   const websiteSection = () => {
     return (
-      <div className="ui text container">
-        <div className="ui huge header centered">My projects</div>
-          <div className="ui header">
-            <h2>Exhibitz</h2>
-            <p>Exhibitz is a place to find all temporary museum exhibits
-             (pre-corona) in one place! </p>
-          </div>
-          <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank">
-            <img className="ui fluid centered image" src={picture} alt="my cute ass head"/>
-          </a>
-          <p>Born from the frustration of having to jump between "What's on"
-            pages of my favourite museums when friends and family came to visit,
-            I pitched, helped build and presented my final project, Exhibitz,
-            towards the end of Le Wagon's coding bootcamp in June. Now you can
-            easily browse exhibits, heart them to add them to your favourites
-            and send calendar invites to people in just a few clicks to make
-            planning your trip as easy as can be!
-          </p>
-          <div className="ui header">
-            <h2>Exhibitz</h2>
-            <p>Exhibitz is a place to find all temporary museum exhibits
-             (pre-corona) in one place! </p>
-          </div>
-          <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank">
-            <img className="ui fluid centered image" src={picture} alt="my cute ass head"/>
-          </a>
-          <p>Born from the frustration of having to jump between "What's on"
-            pages of my favourite museums when friends and family came to visit,
-            I pitched, helped build and presented my final project, Exhibitz,
-            towards the end of Le Wagon's coding bootcamp in June. Now you can
-            easily browse exhibits, heart them to add them to your favourites
-            and send calendar invites to people in just a few clicks to make
-            planning your trip as easy as can be!
-          </p>
-      </div>
+        <div className="ui text container">
+          <div className="ui huge header centered">My projects</div>
+            <div className="ui header">
+              <h2>Exhibitz</h2>
+              <p>Exhibitz is a place to find all temporary museum exhibits
+               (pre-corona) in one place! </p>
+            </div>
 
+            <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank">
+              <ImageCarousel website="exhibitz"/>
+            </a>
+            <p>Born from the frustration of having to jump between "What's on"
+              pages of my favourite museums when friends and family came to visit,
+              I pitched, helped build and presented my final project, Exhibitz,
+              towards the end of Le Wagon's coding bootcamp in June. Now you can
+              easily browse exhibits, heart them to add them to your favourites
+              and send calendar invites to people in just a few clicks to make
+              planning your trip as easy as can be!
+            </p>
+            <div style={{margin: "20px 0"}} className="ui header">
+              <h2>Boatz</h2>
+              <p>Ever wanted to rent a boat? Look no further... </p>
+            </div>
+            <a href="https://boatz-388.herokuapp.com/" className="img-hover" target="_blank">
+              <ImageCarousel website="boatz"/>
+            </a>
+            <p>Boatz! REnt a fucking boat!!!!
+            </p>
+        </div>
     );
   };
 
