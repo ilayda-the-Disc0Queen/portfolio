@@ -1,26 +1,30 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import picture from '../images/dual_screens.jpg';
-import { exhibitz, boatz } from './CarouselDetail';
+import websiteConfig from './CarouselDetail';
 
 const ImageCarousel = (props) => {
-  console.log(exhibitz)
+  const site = props.website
+  console.log(site)
+  const { websiteName, text, slide1, slide2, slide3 } = websiteConfig[site];
+
+
   return (
-    <Carousel >
+    <Carousel className="{site}">
       <Carousel.Item>
         <img className="ui fluid image"
-          src={exhibitz.slide1.image}
-          alt={exhibitz.slide1.alt}/>
+          src={slide1.image}
+          alt={slide1.alt}/>
         <Carousel.Caption>
-          <h3>{exhibitz.slide1.header}</h3>
-          <p>{exhibitz.slide1.caption}</p>
+          <h3>{slide1.header}</h3>
+          <p>{slide1.caption}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="ui fluid image"
-          src={exhibitz.slide2.image}
-          alt={exhibitz.slide2.alt}/>
+          src={slide2.image}
+          alt={slide2.alt}/>
         />
 
         <Carousel.Caption>
@@ -31,8 +35,8 @@ const ImageCarousel = (props) => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={exhibitz.slide3.image}
-          alt={exhibitz.slide3.alt}/>
+          src={slide3.image}
+          alt={slide3.alt}/>
         />
 
         <Carousel.Caption>

@@ -8,7 +8,7 @@ const App = () => {
     <React.Fragment>
       <Banner/>
       <Section/>
-      <ImageCarousel> {/* need specify website name here */}
+      <ImageCarousel website="exhibitz"> {/* need specify website name here */}
       </ImageCarousel>
 
     </React.Fragment>
