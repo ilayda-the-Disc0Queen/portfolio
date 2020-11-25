@@ -84,16 +84,38 @@ const Section = () => {
         <div className="ui huge header centered">My projects</div>
           <div className="ui header">
             <h2>Exhibitz</h2>
-            <p>Born from the frustration of having to jump between "What's on"
-              pages of my favourite museums when friends and family came to visit,
-              I pitched, helped build and presented my final project, Exhibitz,
-              towards the end of Le Wagon's coding bootcamp in June. Now you can
-              easily browse exhibits, heart them to add them to your favourites
-              and send calendar invites to people in just a few clicks to make
-              planning your trip as easy as can be!</p>
+            <p>Exhibitz is a place to find all temporary museum exhibits
+             (pre-corona) in one place! </p>
           </div>
-
+          <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank">
+            <img className="ui fluid centered image" src={picture} alt="my cute ass head"/>
+          </a>
+          <p>Born from the frustration of having to jump between "What's on"
+            pages of my favourite museums when friends and family came to visit,
+            I pitched, helped build and presented my final project, Exhibitz,
+            towards the end of Le Wagon's coding bootcamp in June. Now you can
+            easily browse exhibits, heart them to add them to your favourites
+            and send calendar invites to people in just a few clicks to make
+            planning your trip as easy as can be!
+          </p>
+          <div className="ui header">
+            <h2>Exhibitz</h2>
+            <p>Exhibitz is a place to find all temporary museum exhibits
+             (pre-corona) in one place! </p>
+          </div>
+          <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank">
+            <img className="ui fluid centered image" src={picture} alt="my cute ass head"/>
+          </a>
+          <p>Born from the frustration of having to jump between "What's on"
+            pages of my favourite museums when friends and family came to visit,
+            I pitched, helped build and presented my final project, Exhibitz,
+            towards the end of Le Wagon's coding bootcamp in June. Now you can
+            easily browse exhibits, heart them to add them to your favourites
+            and send calendar invites to people in just a few clicks to make
+            planning your trip as easy as can be!
+          </p>
       </div>
+
     );
   };
 

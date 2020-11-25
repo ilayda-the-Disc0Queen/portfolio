@@ -22,3 +22,15 @@
 #website .container {
   padding: 4em 0;
 }
+
+.img-hover img:hover {
+  opacity: 0.8;
+}
+
+.img-hover img {
+  margin-bottom: 2em;
+}
+
+.img-hover .image {
+  border-radius: 4px;
+}
