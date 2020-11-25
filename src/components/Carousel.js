@@ -1,6 +1,50 @@
 import Carousel from 'react-bootstrap/Carousel';
 import picture from '../images/dual_screens.jpg';
 
+const carouselConfig = {
+  // Exhibitz info
+  exhibitz: {
+    websiteName: "Exhibitz",
+    text: "temporary museum exhibits (pre-corona) in one place!",
+    firstSlide: {
+      image: {picture},
+      caption: "first slide",
+      alt: "this is the first screenshot"
+    },
+    secondSlide: {
+      image: {picture},
+      caption: "second slide",
+      alt: "this is the second screenshot"
+    },
+    thirdSlide: {
+      image: {picture},
+      caption: "third slide",
+      alt: "this is the third screenshot"
+    }
+  },
+  // Boatz info
+  boatz: {
+    websiteName: "Boatz",
+    text: "Rent a boat!",
+    firstSlide: {
+      image: {picture},
+      caption: "first slide",
+      alt: "this is the first screenshot"
+    },
+    secondSlide: {
+      image: {picture},
+      caption: "second slide",
+      alt: "this is the second screenshot"
+    },
+    thirdSlide: {
+      image: {picture},
+      caption: "third slide",
+      alt: "this is the third screenshot"
+    }
+  }
+};
+
+
 const ImageCarousel = () => {
   return (
     <Carousel>
