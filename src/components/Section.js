@@ -1,6 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './Section.css';
-import picture from '../images/dual_screens.jpg';
+import portrait from '../images/waist_up.png';
+import ImageCarousel from './ImageCarousel';
+
+
 
 const Section = () => {
   // personal info and welcome ----------
@@ -10,8 +14,16 @@ const Section = () => {
         {/* writing on left */}
         <div className="row centered">
           <div className="six wide column">
-            <h3 className="ui header">Welcome to my portfolio!</h3>
-            <p>Here you can find projects I have worked on and get in touch if you like!</p>
+            <h2 id="welcome-header" className="ui header">Welcome!</h2>
+            <h3>About me</h3>
+            <p>Pleased to meet you! My name is Ilayda and I first got involved with coding at
+            university whilst taking a module called Numerical Analysis with Computation.
+             Then I worked for a tech startup learning Functional Programming
+             on the job (Clojure) and working as a Data Analyst. Next, I enrolled in Le Wagon's
+             intensive coding bootcamp to better learn the foundations of fullstack
+             web development. Since graduating in the summer I have switched my
+             focus from Ruby-on-Rails to learning React and Redux!
+            </p>
             <h3 className="ui header">
               {"Here's another line of text"}
             </h3>
@@ -19,7 +31,7 @@ const Section = () => {
           </div>
           {/* image on the right */}
           <div className="six wide column">
-            <img className="ui fluid image" src={picture} alt="my cute ass head"/>
+            <img className="ui fluid image rounded" src={portrait} alt="Ilayda in a Le Wagon t-shirt"/>
           </div>
         </div>
       </div>
@@ -31,11 +43,7 @@ const Section = () => {
     return (
       <div className="ui container">
       {/* header above skills */}
-        <div className="row centered">
-          <div className="one wide comlumn">
-            <h3 className="ui center aligned medium header">Skills</h3>
-          </div>
-        </div>
+        <h3 className="ui center aligned medium header">Skills</h3>
         <div id="skills-container" className="ui center aligned three column grid">
           <div className="row">
             <div className="column">
@@ -80,42 +88,35 @@ const Section = () => {
 
   const websiteSection = () => {
     return (
-      <div className="ui text container">
-        <div className="ui huge header centered">My projects</div>
-          <div className="ui header">
-            <h2>Exhibitz</h2>
-            <p>Exhibitz is a place to find all temporary museum exhibits
-             (pre-corona) in one place! </p>
-          </div>
-          <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank">
-            <img className="ui fluid centered image" src={picture} alt="my cute ass head"/>
-          </a>
-          <p>Born from the frustration of having to jump between "What's on"
-            pages of my favourite museums when friends and family came to visit,
-            I pitched, helped build and presented my final project, Exhibitz,
-            towards the end of Le Wagon's coding bootcamp in June. Now you can
-            easily browse exhibits, heart them to add them to your favourites
-            and send calendar invites to people in just a few clicks to make
-            planning your trip as easy as can be!
-          </p>
-          <div className="ui header">
-            <h2>Exhibitz</h2>
-            <p>Exhibitz is a place to find all temporary museum exhibits
-             (pre-corona) in one place! </p>
-          </div>
-          <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank">
-            <img className="ui fluid centered image" src={picture} alt="my cute ass head"/>
-          </a>
-          <p>Born from the frustration of having to jump between "What's on"
-            pages of my favourite museums when friends and family came to visit,
-            I pitched, helped build and presented my final project, Exhibitz,
-            towards the end of Le Wagon's coding bootcamp in June. Now you can
-            easily browse exhibits, heart them to add them to your favourites
-            and send calendar invites to people in just a few clicks to make
-            planning your trip as easy as can be!
-          </p>
-      </div>
+        <div className="ui text container">
+          <div className="ui huge header centered">My projects</div>
+            <div className="ui header">
+              <h2>Exhibitz</h2>
+              <p>Exhibitz is a place to find all temporary museum exhibits
+               (pre-corona) in one place! </p>
+            </div>
 
+            <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank" rel="noreferrer">
+              <ImageCarousel website="exhibitz"/>
+            </a>
+            <p>Born from the frustration of having to jump between "What's on"
+              pages of my favourite museums when friends and family came to visit,
+              I pitched, helped build and presented my final project, Exhibitz,
+              towards the end of Le Wagon's coding bootcamp in June. Now you can
+              easily browse exhibits, heart them to add them to your favourites
+              and send calendar invites to people in just a few clicks to make
+              planning your trip as easy as can be!
+            </p>
+            <div style={{margin: "20px 0"}} className="ui header">
+              <h2>Boatz</h2>
+              <p>Ever wanted to rent a boat? Look no further... </p>
+            </div>
+            <a href="https://boatz-388.herokuapp.com/" className="img-hover" target="_blank" rel="noreferrer">
+              <ImageCarousel website="boatz"/>
+            </a>
+            <p>Boatz! REnt a fucking boat!!!!
+            </p>
+        </div>
     );
   };
 

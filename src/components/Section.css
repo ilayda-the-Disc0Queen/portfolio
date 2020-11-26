@@ -7,6 +7,11 @@
   padding: 0 2em 3em;
 }
 
+#welcome-header {
+  font-size: 3.5em;
+  text-shadow: 3px 3px #136D6D;
+}
+
 #skills-container {
   padding-bottom: 4em;
 }
@@ -33,4 +38,13 @@
 
 .img-hover .image {
   border-radius: 4px;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#info-box h2 {
+  font-family: 'Permanent Marker', cursive;
 }

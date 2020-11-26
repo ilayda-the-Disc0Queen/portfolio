@@ -1,20 +1,12 @@
-/*
-.image-banner {
-  padding: 25% 0;
-  border: 0;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)), url('../images/dual_screens.jpg');
-  background-size: cover;
-  width: 100vw;
-  background-position: center;
-  text-align: center;
-  height: 10%;
-  margin: -100px;
-  top: 0;
-}*/
-
 body, html {
   height: 100%;
   margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+#banner-name {
+  font-size: 4em;
+  text-shadow: 3px 3px #136D6D;
 }
 
 .image-banner {
@@ -41,4 +33,5 @@ body, html {
   color: white;
   letter-spacing: 2.6px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Permanent Marker', cursive;
 }

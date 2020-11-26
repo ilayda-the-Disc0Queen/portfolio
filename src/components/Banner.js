@@ -6,11 +6,11 @@ const Banner = () => {
   return (
     <div className="image-banner">
       <div className="banner text container">
-        <h1 className="banner text header">
+        <h1 id="banner-name" className="banner text header">
           Ilayda Bakare
         </h1>
         <h2 className="banner text" >Fullstack developer</h2>
-        <div className="banner ui huge primary button">Click me!</div>
+        {/* <div className="banner ui huge primary button">Click me!</div> */}
       </div>
       <Navbar/>
     </div>
@@ -18,4 +18,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
