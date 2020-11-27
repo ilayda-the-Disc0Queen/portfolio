@@ -21,9 +21,13 @@
 }
 
 */
-
+/*
 .navbar.container {
   position: absolute;
   width: 100vw;
   top: -20px;
 }
+*/
+ .menu {
+  padding: 10px;
+ }

@@ -48,3 +48,8 @@ h2 {
 #info-box h2 {
   font-family: 'Permanent Marker', cursive;
 }
+
+#portrait {
+  max-width: 30em;
+
+}

@@ -15,7 +15,7 @@ const Section = () => {
         <div className="row centered">
           <div className="six wide column">
             <h2 id="welcome-header" className="ui header">Welcome!</h2>
-            <h3>About me</h3>
+            <h3 className="ui centered header">About me</h3>
             <p>Pleased to meet you! My name is Ilayda and I first got involved with coding at
             university whilst taking a module called Numerical Analysis with Computation.
              Then I worked for a tech startup learning Functional Programming
@@ -24,14 +24,11 @@ const Section = () => {
              web development. Since graduating in the summer I have switched my
              focus from Ruby-on-Rails to learning React and Redux!
             </p>
-            <h3 className="ui header">
-              {"Here's another line of text"}
-            </h3>
-            <p>Saying some other stuff - wow how interesting!</p>
+            <p>Check out some of my work below!</p>
           </div>
           {/* image on the right */}
           <div className="six wide column">
-            <img className="ui fluid image rounded" src={portrait} alt="Ilayda in a Le Wagon t-shirt"/>
+            <img id="portrait" className="ui fluid image rounded centered" src={portrait} alt="Ilayda in a Le Wagon t-shirt"/>
           </div>
         </div>
       </div>
