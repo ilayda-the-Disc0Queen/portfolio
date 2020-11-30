@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import websiteConfig from './CarouselDetail';
-import { ArrowRight } from 'react-bootstrap-icons';
 
 const ImageCarousel = (props) => {
   const site = props.website

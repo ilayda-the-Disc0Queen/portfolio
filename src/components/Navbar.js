@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="ui three item menu inverted fixed top">
         <a className="item active" href="/">Home</a>
         <a className="item" href="#projects">Projects</a>
-        <a className="item">Get in touch</a>
+        <a className="item" href="#contact">Get in touch</a>
       </div>
   );
 };

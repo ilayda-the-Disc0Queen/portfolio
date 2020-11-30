@@ -111,8 +111,7 @@ const Section = () => {
             <a href="https://boatz-388.herokuapp.com/" className="img-hover" target="_blank" rel="noreferrer">
               <ImageCarousel website="boatz"/>
             </a>
-            <p>Boatz! REnt a fucking boat!!!!
-            </p>
+            <p>Search and rent for boats!</p>
         </div>
     );
   };

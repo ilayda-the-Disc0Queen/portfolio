@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="ui inverted vertical footer segment">
+    <div id="contact" className="ui inverted vertical footer segment">
       <div className="ui container">
         <div className="ui large header centered inverted">
           Get in touch!
@@ -19,12 +19,12 @@ const Footer = () => {
                 </div>
               </div>
               <div className="column">
-                <i class="envelope outline icon big"></i>
+                <i className="envelope outline icon big"></i>
                 <h5>ilayda.bakare@gmail.com</h5>
               </div>
               <div className="column">
                 <a href="https://www.linkedin.com/in/ilayda-bakare/" target="_blank" rel="noreferrer">
-                  <i class="linkedin icon link big"></i>
+                  <i className="linkedin icon link big"></i>
                   <h5>ilayda-bakare</h5>
                 </a>
               </div>
