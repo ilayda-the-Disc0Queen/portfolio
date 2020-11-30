@@ -122,7 +122,7 @@ const Section = () => {
       <div className="ui vertical stripe" id="info-box">{infoSection()}</div>
       <div className="ui vertical stripe segment" id="skill">{skillSection()}</div>
       {/* <div className="ui vertical stripe segment" id="quote-box">{quoteSection()}</div> */}
-      <div className="ui vertical stripe segment" id="projects">{projectsSection()}</div>
+      <div className="ui vertical stripe" id="projects">{projectsSection()}</div>
     </React.Fragment>
   );
 };
