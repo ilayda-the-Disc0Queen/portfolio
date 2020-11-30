@@ -1,17 +1,14 @@
 import React from 'react';
-import './Navbar.css';
+import './stylesheets/Navbar.scss';
 
 const Navbar = () => {
   return (
-    <div className="navbar container ui inverted menu top fixed">
-      <div className="ui three item menu">
-        <a className="item active">Home</a>
-        <a className="item">Projects</a>
+      <div className="ui three item menu inverted fixed top">
+        <a className="item active" href="/">Home</a>
+        <a className="item" href="#projects">Projects</a>
         <a className="item">Get in touch</a>
       </div>
-    </div>
   );
 };
 
 export default Navbar;
-

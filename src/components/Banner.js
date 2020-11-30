@@ -1,5 +1,5 @@
 import React from 'react';
-import './Banner.css';
+import './stylesheets/Banner.scss';
 import Navbar from './Navbar';
 
 const Banner = () => {
