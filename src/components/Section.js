@@ -69,7 +69,7 @@ const Section = () => {
     );
   };
 
-  const quoteSection = () => {
+  {/*  const quoteSection = () => {
     return (
       <div className="ui vertical stripe quote segment">
         <div className="ui equal width stackable internally celled grid">
@@ -80,7 +80,7 @@ const Section = () => {
         </div>
       </div>
     );
-  };
+  }; */}
 
    const projectsSection = () => {
     return (
