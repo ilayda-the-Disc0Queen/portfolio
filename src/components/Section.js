@@ -38,7 +38,7 @@ const Section = () => {
       <div className="ui container">
       {/* header above skills */}
         <h3 className="ui center aligned medium header">Skills</h3>
-        <div id="skills-container" className="ui center aligned three column grid">
+        <div id="skills-container" className="ui center aligned three column grid stackable">
           <div className="row">
             <div className="column">
               <div className="ui vertical fluid menu">
