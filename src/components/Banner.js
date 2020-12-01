@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const Banner = () => {
   return (
-    <div className="image-banner">
+    <div id="/" className="image-banner">
       <div className="banner text container">
         <h1 id="banner-name" className="banner text header">
           Ilayda Bakare
