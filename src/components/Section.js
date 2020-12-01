@@ -4,8 +4,6 @@ import './stylesheets/_Section.scss';
 import portrait from '../images/waist_up.png';
 import ImageCarousel from './ImageCarousel';
 
-
-
 const Section = () => {
   // personal info and welcome ----------
   const infoSection = () => {
