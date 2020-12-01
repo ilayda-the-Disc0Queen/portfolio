@@ -35,7 +35,6 @@ const Section = () => {
     );
   };
 
-
   const skillSection = () => {
     return (
       <div className="ui container">
