@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import './stylesheets/Section.scss';
 import portrait from '../images/waist_up.png';
 import ImageCarousel from './ImageCarousel';
@@ -83,7 +83,7 @@ const Section = () => {
     );
   };
 
-  const projectsSection = () => {
+   const projectsSection = () => {
     return (
         <div className="ui text container">
           <div className="ui huge header centered">My projects</div>
@@ -92,10 +92,11 @@ const Section = () => {
               <p>Exhibitz is a place to find all temporary museum exhibits
                (pre-corona) in one place! </p>
             </div>
-
-            <a href="http://www.exhibitz.co.uk/" className="img-hover" target="_blank" rel="noreferrer">
-              <ImageCarousel website="exhibitz"/>
-            </a>
+            <BrowserRouter>
+              <Link to={{ pathname: "http://www.exhibitz.co.uk/" }} target="_blank" className="img-hover" rel="noreferrer">
+                <ImageCarousel website="exhibitz"/>
+              </Link>
+            </BrowserRouter>
             <p>Born from the frustration of having to jump between "What's on"
               pages of my favourite museums when friends and family came to visit,
               I pitched, helped build and presented my final project, Exhibitz,
@@ -108,9 +109,11 @@ const Section = () => {
               <h2>Boatz</h2>
               <p>Ever wanted to rent a boat? Look no further... </p>
             </div>
-            <a href="https://boatz-388.herokuapp.com/" className="img-hover" target="_blank" rel="noreferrer">
-              <ImageCarousel website="boatz"/>
-            </a>
+            <BrowserRouter>
+              <Link to={{ pathname: "https://boatz-388.herokuapp.com/" }} target="_blank" className="img-hover" rel="noreferrer">
+                <ImageCarousel website="boatz"/>
+              </Link>
+            </BrowserRouter>
             <p>Search and rent for boats!</p>
         </div>
     );
