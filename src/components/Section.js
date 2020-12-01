@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
-import './stylesheets/Section.scss';
+import './stylesheets/_Section.scss';
 import portrait from '../images/waist_up.png';
 import ImageCarousel from './ImageCarousel';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './stylesheets/Form.scss';
+import './stylesheets/_Form.scss';
 
 class Form extends React.Component {
   state = { term: ''};
