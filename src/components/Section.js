@@ -69,6 +69,7 @@ const Section = () => {
     );
   };
 
+  // eslint-disable-next-line no-lone-blocks
   {/*  const quoteSection = () => {
     return (
       <div className="ui vertical stripe quote segment">
