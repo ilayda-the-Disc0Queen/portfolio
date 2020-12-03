@@ -87,8 +87,8 @@ const Section = () => {
           <div className="ui huge header centered">My projects</div>
             <div className="ui header">
               <h2>Exhibitz</h2>
-              <p>Exhibitz is a place to find all temporary museum exhibits
-               (pre-corona) in one place! </p>
+              <p>Exhibitz is THE place to find all temporary museum exhibits
+               in one place! </p>
             </div>
             <BrowserRouter>
               <Link to={{ pathname: "http://www.exhibitz.co.uk/" }} target="_blank" className="img-hover" rel="noreferrer">
@@ -105,14 +105,17 @@ const Section = () => {
             </p>
             <div style={{margin: "20px 0"}} className="ui header">
               <h2>Boatz</h2>
-              <p>Ever wanted to rent a boat? Look no further... </p>
+              <p>My first website made during Le Wagon's coding bootcamp!</p>
             </div>
             <BrowserRouter>
               <Link to={{ pathname: "https://boatz-388.herokuapp.com/" }} target="_blank" className="img-hover" rel="noreferrer">
                 <ImageCarousel website="boatz"/>
               </Link>
             </BrowserRouter>
-            <p>Search and rent for boats!</p>
+            <p>Tasked with making a website similar to Airbnb, instead
+            of renting appartments, my team and I chose to rent boats! The aim
+            was to make a platform where users could upload their own conent (boats
+              available for rent) and manage their bookings etc.  </p>
         </div>
     );
   };
