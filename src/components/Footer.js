@@ -22,8 +22,10 @@ const Footer = () => {
                 </div>
               </div>
               <div className="column">
-                <i className="envelope outline icon big"></i>
-                <h5>ilayda.bakare@gmail.com</h5>
+                <a href="mailto:ilayda.bakare@gmail.com">
+                  <i className="envelope outline icon big"></i>
+                  <h5>ilayda.bakare@gmail.com</h5>
+                </a>
               </div>
               <div className="column">
                 <BrowserRouter>
