@@ -7,6 +7,9 @@ import boatz3 from '../images/boatz3.png';
 import lockdown1 from '../images/lockdown1.png';
 import lockdown2 from '../images/lockdown2.png';
 import lockdown3 from '../images/lockdown3.png';
+import street1 from '../images/street1.png';
+import street2 from '../images/street2.png';
+import street3 from '../images/street3.png';
 
 
 const websiteConfig = {
@@ -73,6 +76,29 @@ const websiteConfig = {
     },
     slide3: {
       image: lockdown3,
+      header: "",
+      caption: "",
+      alt: "photos made by artist"
+    }
+  },
+
+  streetNYE: {
+    websiteName: "StreetNYE",
+    text: "NYE party details in an app for my street dance friends",
+    slide1: {
+      image: street1,
+      header: "",
+      caption: "",
+      alt: "homepage"
+    },
+    slide2: {
+      image: street2,
+      header: "",
+      caption: "",
+      alt: "about the exhibition"
+    },
+    slide3: {
+      image: street3,
       header: "",
       caption: "",
       alt: "photos made by artist"
