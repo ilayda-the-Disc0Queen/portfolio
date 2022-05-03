@@ -85,8 +85,40 @@ const Section = () => {
     return (
         <div className="ui text container">
           <div className="ui huge header centered">My projects</div>
-            <div className="ui header">
+          <div className="ui header">
+              <div style={{margin: "20px 0"}} className="ui header">
+                <h2>Fifteen Days of Lockdown</h2>
+                <p className="subheader">A digital exhibition by Charlotte Holme</p>
+              </div>
+              <BrowserRouter>
+                <Link to={{ pathname: "https://15daysoflockdown.site/" }} target="_blank" className="img-hover" rel="noreferrer">
+                  <ImageCarousel website="lockdown"/>
+                </Link>
+              </BrowserRouter>
+              <p className="description">This digital exhibition showcases the work of artist Charlotte
+               Holme and includes a time-lapse animation, images and audio, all
+               captured within the same 15 days during the lockdown period.
+              </p>
 
+              <div style={{margin: "20px 0"}} className="ui header">
+                <h2>Exhibitz</h2>
+                <p className="subheader">Exhibitz is THE place to find all temporary museum exhibits
+                 in one place! </p>
+              </div>
+              <BrowserRouter>
+                <Link to={{ pathname: "http://www.exhibitz.co.uk/" }} target="_blank" className="img-hover" rel="noreferrer">
+                  <ImageCarousel website="exhibitz"/>
+                </Link>
+              </BrowserRouter>
+              <p className="description">Born from the frustration of having to jump between "What's on"
+                pages of my favourite museums when friends and family came to visit,
+                I pitched, helped build and presented my final project, Exhibitz,
+                towards the end of Le Wagon's coding bootcamp in June. Now you can
+                easily browse exhibits, heart them to add them to your favourites
+                and send calendar invites to people in just a few clicks to make
+                planning your trip as easy as can be!
+              </p>
+            <div className="ui header">
               <div style={{margin: "20px 0"}} className="ui header">
                 <h2>Fifteen Days of Lockdown</h2>
                 <p className="subheader">A digital exhibition by Charlotte Holme</p>
